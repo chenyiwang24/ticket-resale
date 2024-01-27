@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
   
 import Home from './pages/Home';
+import SignUpLogIn from './pages/SignUpLogIn';
 
 function AppRouter() {
   return (
@@ -15,7 +16,7 @@ function AppRouter() {
 
       <Routes>
       <Route path='/home' element={<Home/>} />
-    
+      <Route path ='/signuplogin' element={<SignUpLogIn/>} />
       </Routes>
       </Router>
   );

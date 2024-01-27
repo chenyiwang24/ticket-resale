@@ -1,24 +1,29 @@
-// App.js
 import React from 'react';
 import './SignUpLogIn.css';
+import backroundVideo from '../assets/cinematichome.mp4';
 
-const App = () => {
+const SignUpLogIn = () => {
   return (
-    <div className="app-container">
-      <div className="video-background">
-        <video autoPlay muted loop>
-          <source src="path_to_your_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="auth-form">
-        <h2>Login / Sign Up Form</h2>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button>Login</button>
+    <div className="container">
+      <video className="video-bg" autoPlay muted loop>
+        <source src={backroundVideo} type="video/mp4" />
+      </video>
+      <div className="login-container">
+        <h2>Login</h2>
+        <form className="login-form">
+          <div className="form-group">
+            <label htmlFor="username">Username</label>
+            <input type="text" id="username" name="username" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
       </div>
     </div>
   );
 };
 
-export default App;
+export default SignUpLogIn;
