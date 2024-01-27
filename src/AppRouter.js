@@ -8,7 +8,8 @@ import {
   } from "react-router-dom";
   
 import Home from './pages/Home';
-import SignUpLogIn from './pages/SignUpLogIn';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 
 function AppRouter() {
   return (
@@ -16,7 +17,8 @@ function AppRouter() {
 
       <Routes>
       <Route path='/home' element={<Home/>} />
-      <Route path ='/signuplogin' element={<SignUpLogIn/>} />
+      <Route path ='/signup' element={<Signup/>} />
+      <Route path ='/login' element={<Login/>} />
       </Routes>
       </Router>
   );
