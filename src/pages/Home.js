@@ -15,8 +15,8 @@ function Home() {
                 <h1 className='title'>No Seat <br /> Wasted</h1>
                 <p className='description'>Buy and Resell Market</p>
                 <div className='buttons'>
-                    <button>Login</button>
-                    <button></button>
+                    <button className='Login'>Login</button>
+                    <button className='SignUp'>Sign Up</button>
                 </div>
             </div>
         </div>

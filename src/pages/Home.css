@@ -27,11 +27,23 @@
 .title{
     font-size: 5vw;
     line-height: 6vw;
-    letter-spacing: .5vw;
+    letter-spacing: .8vw;
 }
 
 .description{
     margin-top: -10%;
     font-weight: 1vw;
     font-size: 2vw;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+}
+
+.Login{
+    
+}
+.SignUp{
+    margin-left: 1vw;
 }
