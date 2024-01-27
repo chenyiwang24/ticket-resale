@@ -1,0 +1,21 @@
+
+.arrival-city{
+margin-top: 10px;
+
+
+
+}
+
+.departure-city{
+    margin-top: 50px;
+    
+}
+
+.search-button {
+    position: fixed;
+    width: 100px;
+    right: 1100px;
+    bottom: 59px;
+    margin-top: 5px;
+
+}
