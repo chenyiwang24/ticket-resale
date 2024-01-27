@@ -10,12 +10,15 @@ margin-top: 10px;
     margin-top: 50px;
     
 }
+.search{
+    display: flex;
+}
 
 .search-button {
-    position: fixed;
+    position: relative;
     width: 100px;
-    right: 1100px;
-    bottom: 59px;
-    margin-top: 5px;
+    
+    
+
 
 }
