@@ -30,6 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .login-form {
@@ -86,7 +87,7 @@ button {
   margin-left: 75px;
   border: none;
   border-radius: 15px;
-  background-color: #007bff;
+  background-color: #127cb8;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
