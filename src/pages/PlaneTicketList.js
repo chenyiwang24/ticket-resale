@@ -2,8 +2,18 @@ import React, { useState } from 'react';
 import NavBar from './NavBar1';
 import './PlaneTicketList.css'
 import plane from '../assets/plane.png'
+import CreditCardPopup from './CreditCardPopup';
 
 const PlaneTicketList = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
   const divStyle = {
     backgroundColor: '#f7f9fe', // Set the desired background color using a color code
     width: '100%', // Set width to 100% to cover the entire width of the container
@@ -81,7 +91,8 @@ const PlaneTicketList = () => {
             <div className='line'></div>
             <div>
               <div className='ewjfoiwe'>${ticket.price}</div>
-              <button>Book</button>
+              <button onClick={openPopup}>Book</button>
+              <CreditCardPopup isOpen={isPopupOpen} onClose={closePopup} />
             </div>
             </div>
             </div>

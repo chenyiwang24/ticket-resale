@@ -51,6 +51,7 @@ const Signup = () => {
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
               placeholder="Email"
+              className='email'
             />
           </div>
           <div className="form-group">
@@ -64,10 +65,11 @@ const Signup = () => {
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
               placeholder="Password"
+              className='pword'
             />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button type="submit">Sign Up</button>
+          <button type="submit" className='loginbutton'>Sign Up</button>
         </form>
       </div>
     </div>

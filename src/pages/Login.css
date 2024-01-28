@@ -24,7 +24,7 @@
   right: 0;
   top: 0;
   height: 100%;
-  width: 30%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.85);
   display: flex;
   flex-direction: column;
@@ -44,6 +44,8 @@
 .form-group {
   position: relative; /* Make the icon placeholders relative to the form-group */
   margin-bottom: 15px;
+  width: 400px;
+  margin-left: -18%;
 }
 
 .icon {
@@ -95,4 +97,20 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.email{
+  height: 40px;
+  width: 150%;
+}
+
+.pword{
+  width: 150px;
+  height: 40px;
+}
+.loginbutton{
+  width: 410px;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: -18%;
 }

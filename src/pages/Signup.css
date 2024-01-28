@@ -1,79 +1,116 @@
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden; /* Hide overflow from translucent column */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  .video-bg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .login-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 30%; /* Adjust width as needed */
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  }
-  
-  .login-form {
-    width: 80%;
-    max-width: 300px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .aa-logo {
-    width: 350px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 25px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type='text'],
-  input[type='password'] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: ##127cb8;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.login-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.login-form {
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.form-group {
+  position: relative; /* Make the icon placeholders relative to the form-group */
+  margin-bottom: 15px;
+  width: 400px;
+  margin-left: -18%;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 15px; /* Adjust the position of the icon */
+  transform: translateY(-50%);
+  width: 15px;
+  height: 18px;
+}
+
+.aa-logo {
+  width: 350px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 25px;
+}
+
+h2 {
+  opacity: .6;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: calc(100% - 40px); /* Adjusted width to accommodate the icon */
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 40px; /* Ensure space for the icon */
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 75px;
+  border: none;
+  border-radius: 15px;
+  background-color: #127cb8;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.email{
+  height: 40px;
+  width: 150%;
+}
+
+.pword{
+  width: 150px;
+  height: 40px;
+}
+.loginbutton{
+  width: 410px;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: -18%;
+}
