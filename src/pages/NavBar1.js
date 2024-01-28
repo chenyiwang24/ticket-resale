@@ -3,12 +3,12 @@ import './NavBar1.css'
 import AA from '../assets/a-icon.png'
 const NavBar1 = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
+    <nav className="navbar1">
+      <div className="logo1">
         <img src={AA} alt="" />
       </div>
       <div></div>
-      <ul className="nav-links">
+      <ul className="nav-links1">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/services">Services</a></li>

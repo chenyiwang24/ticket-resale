@@ -4,6 +4,11 @@ import './PlaneTicketList.css'
 import plane from '../assets/plane.png'
 
 const PlaneTicketList = () => {
+  const divStyle = {
+    backgroundColor: '#f7f9fe', // Set the desired background color using a color code
+    width: '100%', // Set width to 100% to cover the entire width of the container
+    height: '100%', // Set height to 100% to cover the entire height of the container
+  };
   const planeTicketData = [
     { id: 1, destination: 'New York', departureTime: '10:45 am', arrivalTime: '1:45 pm'
     , arrivalZone: 'London Standard', departureZone: 'London Standard', price: 300, availableSeats: 50 },
@@ -34,7 +39,7 @@ const PlaneTicketList = () => {
   };
 
   return (
-    <div>
+    <div style={divStyle}>
       <NavBar></NavBar>
       <div className='here'>
         <div className='searches'>
@@ -43,13 +48,13 @@ const PlaneTicketList = () => {
             <input
             type="text"
             placeholder="Departure"
-            className="date-set"
+            className="date-set12"
             />
             <h4>From</h4>
             <input
             type="text"
             placeholder="Departure"
-            className="date-set"
+            className="date-set12"
             />
             <h4>Date</h4>
             <input 
@@ -63,11 +68,16 @@ const PlaneTicketList = () => {
           <div  key={ticket.id}>
             <div className='all dep'>
               June 10th - Departure
+              <div className='fl'>
+
+              
             <div className='map dep'>
               <div className='dep dep1'>{ticket.departureTime}</div>
               <img src={plane} alt="" className='img1'/>
               <div className='dep dep1'>{ticket.arrivalTime}</div>
-              <div className="verticalLine"> 1</div>
+              
+            </div>
+            <div className='line'></div>
             </div>
             </div>
             
