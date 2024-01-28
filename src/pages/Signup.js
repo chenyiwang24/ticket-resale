@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import './Signup.css';
+import './Login.css';
 import backroundVideo from '../assets/cinematichome.mp4';
-import logo from '../assets/AA-icon.png'
+import logo from '../assets/AA-icon.png';
+import userIcon from '../assets/user.png'; // Import user icon image
+import passwordIcon from '../assets/password.png'; // Import password icon image
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import '../Firebase.js'
+import '../Firebase'; // Corrected path for Firebase initialization
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -30,33 +32,39 @@ const Signup = () => {
         <source src={backroundVideo} type="video/mp4" />
       </video>
       <div className="login-container">
-        <div className="logoAA">
-          <img src={logo} alt="" />
+      <div className="logoAA">
+          <img src={logo} alt="" className="aa-logo" /> {/* Added class aa-logo */}
         </div>
-        <h2>Sign Up</h2>
+        <h2>AAdvantage Member Signup</h2>
         <form className="login-form" onSubmit={handleSignup}>
           <div className="form-group">
-            <label htmlFor="username">Email</label>
+            <label htmlFor="email">
+              <img src={userIcon} alt="User Icon" className="icon" /> {/* User icon */}
+            </label>
             <input 
               type="email" 
               id="email" 
               name="email" 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
+              placeholder="Email"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">
+              <img src={passwordIcon} alt="Password Icon" className="icon" /> {/* Password icon */}
+            </label>
             <input 
               type="password" 
               id="password" 
               name="password" 
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
+              placeholder="Password"
             />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button type="submit">Sign Up</button>
+          <button type="submit">Signup</button>
         </form>
       </div>
     </div>

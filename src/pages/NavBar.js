@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css'
-import AA from '../assets/AA-icon.png'
+import AA from '../assets/aawhite.png'
 const NavBar = () => {
   return (
     <nav className="navbar">
