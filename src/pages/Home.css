@@ -44,16 +44,45 @@
 }
 
 .l{
+    
     width: 100%;
 }
 .SignUp{
+    background-color: #127cb8;
     height: 4vw;
     margin-left: 1vw;
 }
 .Login{
+    background-color: #127cb8;
     height: 4vw;
 }
-.text{
-    z-index: 10;
-    background-color: aliceblue;
+
+.mid-container{
+
+}
+.text-1{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.offers{
+    display: flex;
+    margin-top: -7%;
+    margin-left: 1%;
+}
+
+.offer{
+    width: 30%;
+    scale: .6;
+}
+
+.title1{
+    font-size: 2vw;
+    width: 170%;
+}
+.desc1{
+    margin-top: -2%;
+    font-size: 1.5vw;
+    width: 150%;
 }
