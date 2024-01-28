@@ -7,7 +7,7 @@ const PlaneTicketList = () => {
   const divStyle = {
     backgroundColor: '#f7f9fe', // Set the desired background color using a color code
     width: '100%', // Set width to 100% to cover the entire width of the container
-    height: '100%', // Set height to 100% to cover the entire height of the container
+    height: '1000px', // Set height to 100% to cover the entire height of the container
   };
   const planeTicketData = [
     { id: 1, destination: 'New York', departureTime: '10:45 am', arrivalTime: '1:45 pm'
@@ -39,7 +39,8 @@ const PlaneTicketList = () => {
   };
 
   return (
-    <div style={divStyle}>
+    <div style={divStyle} >
+      <div className='h12'>
       <NavBar></NavBar>
       <div className='here'>
         <div className='searches'>
@@ -53,7 +54,7 @@ const PlaneTicketList = () => {
             <h4>From</h4>
             <input
             type="text"
-            placeholder="Departure"
+            placeholder="Arrival"
             className="date-set12"
             />
             <h4>Date</h4>
@@ -78,6 +79,10 @@ const PlaneTicketList = () => {
               
             </div>
             <div className='line'></div>
+            <div>
+              <div className='ewjfoiwe'>${ticket.price}</div>
+              <button>Book</button>
+            </div>
             </div>
             </div>
             
@@ -85,7 +90,7 @@ const PlaneTicketList = () => {
         ))}
       </ul>
       </div>
-      
+      </div>
     </div>
   );
 };
