@@ -4,7 +4,12 @@ import './SearchBar.css';
 const SearchBar = ({ onSearch }) => {
   const [DepartureCity, setSearchQuery1] = useState('');
   const [ArrivalCity, setSearchQuery2] = useState('');
+  const [selectedDate, setSelectedDate] = useState('');
 
+
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+  };
   const handleInputChange1 = (event) => {
     setSearchQuery1(event.target.value);
   };
@@ -15,7 +20,8 @@ const SearchBar = ({ onSearch }) => {
   const handleSearch = () => {
     // Pass the searchQuery to the parent component for further processing
     onSearch(DepartureCity);
-    onSearch(DepartureCity);
+    onSearch(ArrivalCity);
+    onSearch(selectedDate);
 
   };
 
@@ -46,11 +52,11 @@ const SearchBar = ({ onSearch }) => {
       </div>
     <div className="date-box">
       <input 
-
-        type = "text"
+        type = "date"
         placeholder = "Date"
-        
+        value = {selectedDate}
         className="date-set"
+        onChange = {handleDateChange}
         />
         </div>
       <button className="search-button"onClick={handleSearch}>Search</button>
