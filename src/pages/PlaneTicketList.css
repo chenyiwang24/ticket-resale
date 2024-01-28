@@ -14,14 +14,14 @@
     color: black;
 }
 .date-set1{
-    z-index: 10;
-    margin-top: 0px;
-    height: 60px;
-    border: none;
-    background-color: white;
-    width: 305px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 0%;
+        z-index: 10;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+        background-color: white;
+        width: 305px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left: 0%;
 }
 .date-set12{
     background-color: white;

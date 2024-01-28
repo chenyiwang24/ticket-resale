@@ -1,0 +1,62 @@
+.cardholder{
+    z-index: 10;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    width: 305px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    margin-left: 0%;
+    margin-bottom: 15px;
+}
+
+.purchase{
+    margin-left: 0px;
+}
+
+.cancel{
+    margin-left: 0px;
+}
+
+.popup{
+    display:flex;
+    flex-direction: column;
+}
+
+.cvv {
+    z-index: 10;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    width: 305px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    margin-left: 0%;
+    margin-bottom: 15px;
+}
+
+.expiry-date{
+    z-index: 10;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    width: 305px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    margin-left: 0%;
+    margin-bottom: 15px;
+}
+
+.card-number {
+    z-index: 10;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    width: 305px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    margin-left: 0%;
+    margin-bottom: 15px;
+
+}
+
