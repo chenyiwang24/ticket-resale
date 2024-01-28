@@ -15,11 +15,22 @@ const CreditCardPopup = ({ isOpen, onClose }) => {
     alert('Purchase Successful!');
     onClose();
   };
+  
+const customModalStyles = {
+    content: {
+      width: '350px', // Set your desired width
+      margin: 'auto', // Center the modal horizontally
+      overflow: 'hidden',
+    },
+    overlay: {
+        backgroundColor: 'rgba(0, 0, 0, 0.1)', // Adjust the alpha channel for transparency
+      },
+  };
 
   return (
-    <Modal dialogClassName="my-modal" isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
+    <Modal style={customModalStyles} isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
       <div>
-        <h1>Enter Credit Card Information</h1>
+        <h1 className="prompt">Enter Credit Card Information</h1>
         <form className="popup">
 
           <input
@@ -58,13 +69,14 @@ const CreditCardPopup = ({ isOpen, onClose }) => {
             className="cardholder"
             onChange={(e) => setName(e.target.value)}
           />
-
+        <div className="button-wrap">
           <button className="purchase" type="button" onClick={handlePurchase}>
             Purchase
           </button>
           <button className="cancel" type="button" onClick={onClose}>
             Cancel
           </button>
+          </div>
         </form>
       </div>
     </Modal>

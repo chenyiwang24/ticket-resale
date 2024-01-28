@@ -12,15 +12,19 @@
 
 .purchase{
     margin-left: 0px;
+    width: 45%;
+    margin-right: 10%;
 }
 
 .cancel{
     margin-left: 0px;
+    width: 45%;
 }
 
 .popup{
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .cvv {
@@ -58,5 +62,13 @@
     margin-left: 0%;
     margin-bottom: 15px;
 
+}
+
+.prompt {
+    text-align: center;
+}
+
+.button-wrap {
+    width: 100%;
 }
 
