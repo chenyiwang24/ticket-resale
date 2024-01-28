@@ -20,7 +20,8 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div><h2>Find Your Flight</h2>
+    <div className='full'>
+      <h2 className='t'>Find Your Flight</h2>
     <div className="search">
       
       <div className="departure-box">
@@ -52,9 +53,7 @@ const SearchBar = ({ onSearch }) => {
         className="date-set"
         />
         </div>
-      <div className="search-button-box">
       <button className="search-button"onClick={handleSearch}>Search</button>
-      </div>
     </div>
     </div>
   );

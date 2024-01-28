@@ -38,27 +38,28 @@
 }
 
 .buttons{
-    
+    margin-left: -10%;
     display: flex;
     width: 100%;
 }
 
 .l{
-    
     width: 100%;
 }
 .SignUp{
+    width: 75%;
     background-color: #127cb8;
     height: 4vw;
     margin-left: 1vw;
 }
 .Login{
+    width: 75%;
     background-color: #127cb8;
     height: 4vw;
 }
 
 .mid-container{
-
+    margin-top: 13.5%;
 }
 .text-1{
     margin-left: 5%;
