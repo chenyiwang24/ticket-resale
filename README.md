@@ -1,1 +1,6 @@
-# American Airlines: Ticket Resale
+# ticket-resale
+
+By:
+- Chenyi Wang
+- Jeffrey Bennet
+- Syed Karim
