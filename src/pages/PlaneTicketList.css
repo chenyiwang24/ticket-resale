@@ -49,21 +49,30 @@
 }
 
 .img1{
-    scale: 70%;
-    margin-right: -50px;
+    margin-top: 3px;
+    width: 50%;
+    height: 50%;
 }
+
+.h12{
+    margin-left: 1%;
+}
+
+
 .dep{
-    margin-right: -50px;
+    margin-right: 10px;
     font-size: 15px;
     
 }
 .dep1{
     font-size: 25px;
     margin-top: 11px;
+    
 }
 .op{
-    width: 1000px;
+    width: 900px;
     margin-left: 30px;
+    margin-top: 50px;
 }
 .line {
     margin-left: 200px;
@@ -71,9 +80,18 @@
     width: 1px;
     height: 100px;
     z-index: 100;
+    margin-left: -80px;
     margin-bottom: 10px;
   }
 
   .fl{
     display: flex;
+    margin-top: 10px;
+  }
+  .ewjfoiwe{
+    font-size: 2vw;
+    margin-left: 67px;
+    margin-top: 5%;
+    margin-bottom: -8%;
+    text-align: center;
   }
