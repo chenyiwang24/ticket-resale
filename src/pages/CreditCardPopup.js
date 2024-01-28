@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './CreditCardPopup.css'
+import { useNavigate } from 'react-router-dom';
 
 const CreditCardPopup = ({ isOpen, onClose }) => {
   const [cardNumber, setCardNumber] = useState('');
   const [expiryDate, setExpiryDate] = useState('');
   const [cvv, setCvv] = useState('');
   const [name, setName] = useState('');
-
+  
   const handlePurchase = () => {
     // In a real-world scenario, you would send this data to a secure server
     // for payment processing, and not handle sensitive data on the client side.
@@ -18,9 +19,12 @@ const CreditCardPopup = ({ isOpen, onClose }) => {
   
 const customModalStyles = {
     content: {
-      width: '350px', // Set your desired width
+      
+      width: '700px', // Set your desired width
       margin: 'auto', // Center the modal horizontally
+      height: '500px',
       overflow: 'hidden',
+      borderRadius: '10px'
     },
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.1)', // Adjust the alpha channel for transparency
@@ -28,9 +32,9 @@ const customModalStyles = {
   };
 
   return (
-    <Modal style={customModalStyles} isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
+    <Modal style={customModalStyles} isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false} >
       <div>
-        <h1 className="prompt">Enter Credit Card Information</h1>
+        <h1 className="prompt">Complete Purchase</h1>
         <form className="popup">
 
           <input

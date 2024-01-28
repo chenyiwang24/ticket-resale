@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBar = ({ onSearch }) => {
   const [DepartureCity, setSearchQuery1] = useState('');
   const [ArrivalCity, setSearchQuery2] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
-
+  const navigate = useNavigate();
+  const var1 = 'value1';
+  const var2 = 'value2';
+  const var3 = 'value3';
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -22,7 +26,7 @@ const SearchBar = ({ onSearch }) => {
     onSearch(DepartureCity);
     onSearch(ArrivalCity);
     onSearch(selectedDate);
-
+    navigate('/tickets',{state:{id:1,arrive:ArrivalCity}, state:{id:2, depart:DepartureCity}, state:{id:3, date:selectedDate}});
   };
 
   return (

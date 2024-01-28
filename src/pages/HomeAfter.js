@@ -6,8 +6,10 @@ import SearchBar from './SearchBar'
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
 import img3 from '../assets/img3.png'
+import { useNavigate } from 'react-router-dom';
 
 function HomeAfter() {
+    const navigate = useNavigate();
     const handleSearch = (query) => {
         // Perform the search logic here and update the searchResults state
         // For this example, let's just log the search query to the console

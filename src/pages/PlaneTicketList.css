@@ -1,4 +1,5 @@
 .ttle{
+    
     margin-top: 7%;
 }
 
@@ -94,4 +95,9 @@
     margin-top: 5%;
     margin-bottom: -8%;
     text-align: center;
+  }
+  .btn-search{
+    margin-left: 0px;
+    height: 50px;
+    width: 300px;
   }
