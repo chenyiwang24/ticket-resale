@@ -20,7 +20,9 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
+    <div><h2>Find Your Flight</h2>
     <div className="search">
+      
       <div className="departure-box">
       <input
         
@@ -54,7 +56,7 @@ const SearchBar = ({ onSearch }) => {
       <button className="search-button"onClick={handleSearch}>Search</button>
       </div>
     </div>
-    
+    </div>
   );
 };
 
