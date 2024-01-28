@@ -38,7 +38,7 @@ const Signup = () => {
       <div className="logoAA">
           <img src={logo} alt="" className="aa-logo" /> {/* Added class aa-logo */}
         </div>
-        <h2>AAdvantage Member Signup</h2>
+        <h2>AAdvantage Member Sign Up</h2>
         <form className="login-form" onSubmit={handleSignup}>
           <div className="form-group">
             <label htmlFor="email">
@@ -67,7 +67,7 @@ const Signup = () => {
             />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button type="submit">Signup</button>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
     </div>
