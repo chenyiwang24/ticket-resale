@@ -1,5 +1,5 @@
 import backroundVideo from '../assets/backgroundvideo.mp4';
-import './Home.css'
+import './HomeAfter.css'
 import Navbar from './NavBar';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar'
@@ -7,7 +7,7 @@ import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
 import img3 from '../assets/img3.png'
 
-function Home() {
+function HomeAfter() {
     const handleSearch = (query) => {
         // Perform the search logic here and update the searchResults state
         // For this example, let's just log the search query to the console
@@ -23,7 +23,7 @@ function Home() {
             <div className="content">
                 <h1 className='title'>Seize every <br /> Oppurtunity, No <br /> Seat Wasted</h1>
                 <p className='description'>Buy and Resell Market</p>
-                <div className='buttons'>
+                <div className='buttons1'>
                     <Link to="/login" className='l'>
                         <button className='Login'>Login</button>
                      </Link>
@@ -31,7 +31,8 @@ function Home() {
                         <button className='SignUp'>Sign Up</button>
                     </Link>
                 </div>
-                <SearchBar onSearch={handleSearch} />
+                <div><SearchBar onSearch={handleSearch} /></div>
+                
             </div>
             </div>
             <div className='mid-container'>
@@ -58,4 +59,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomeAfter;

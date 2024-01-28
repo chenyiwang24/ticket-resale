@@ -12,6 +12,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import PlaneTicketList from './pages/PlaneTicketList';
 
+import HomeAfter from './pages/HomeAfter';
 
 function AppRouter() {
   return (
@@ -22,6 +23,7 @@ function AppRouter() {
       <Route path ='/signup' element={<Signup/>} />
       <Route path ='/login' element={<Login/>} />
       <Route path='/planticketlist' element={<PlaneTicketList/>} />
+      <Route path='/home' element={<HomeAfter/>} />
       <Route path='/' element={<Home/>} />
       
       </Routes>

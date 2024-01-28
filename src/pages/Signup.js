@@ -6,12 +6,14 @@ import userIcon from '../assets/user.png'; // Import user icon image
 import passwordIcon from '../assets/password.png'; // Import password icon image
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import '../Firebase'; // Corrected path for Firebase initialization
+import { useNavigate } from 'react-router-dom';
+
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-
   const handleSignup = async (e) => {
     e.preventDefault();
 
@@ -20,6 +22,7 @@ const Signup = () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+      navigate('/home');;
       // Signed up successfully, you can redirect or perform any other action here
     } catch (error) {
       setError(error.message);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 import backroundVideo from '../assets/cinematichome.mp4';
 import logo from '../assets/AA-icon.png';
 import userIcon from '../assets/user.png'; // Import user icon image
@@ -8,6 +9,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import '../Firebase'; // Corrected path for Firebase initialization
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -22,6 +24,8 @@ const Login = () => {
       const user = userCredential.user;
       // Signed in successfully, you can redirect or perform any other action here
       console.log("Logged in successfully!");
+      navigate('/home');
+
     } catch (error) {
       setError(error.message);
       console.error("Error during login:", error.message);
