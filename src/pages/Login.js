@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
-import backroundVideo from '../assets/My Movie 1.mp4';
+import backroundVideo from '../assets/My Movie 1.mov';
 import logo from '../assets/AA-icon.png';
 import userIcon from '../assets/user.png'; // Import user icon image
 import passwordIcon from '../assets/password.png'; // Import password icon image
