@@ -21,6 +21,7 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="search">
+      <div className="departure-box">
       <input
         
         type="text"
@@ -29,6 +30,8 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleInputChange1}
         className="departure-city"
       />
+      </div>
+      <div className="arrival-box">
       <input
         
         type="text"
@@ -37,8 +40,19 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleInputChange2}
         className="arrival-city"
       />
-      
+      </div>
+    <div className="date-box">
+      <input 
+
+        type = "text"
+        placeholder = "Date"
+        
+        className="date-set"
+        />
+        </div>
+      <div className="search-button-box">
       <button className="search-button"onClick={handleSearch}>Search</button>
+      </div>
     </div>
     
   );

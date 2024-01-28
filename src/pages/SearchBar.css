@@ -1,22 +1,46 @@
 
+.departure-box{
+    width: 20%;
+    
+}
+
+.arrival-box {
+    width: 20%;
+}
+
+.date-box {
+    width: 20%;
+
+}
+
+.search-button-box {
+    width: 20%;
+}
+
 .arrival-city{
-margin-top: 10px;
+
+
 
 
 
 }
 
 .departure-city{
-    margin-top: 50px;
+   
     
 }
 .search{
     display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    
+    
 }
 
 .search-button {
-    position: relative;
-    width: 100px;
+    
     
     
 
