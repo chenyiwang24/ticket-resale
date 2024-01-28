@@ -22,7 +22,7 @@ function AppRouter() {
       
       <Route path ='/signup' element={<Signup/>} />
       <Route path ='/login' element={<Login/>} />
-      <Route path='/planticketlist' element={<PlaneTicketList/>} />
+      <Route path='/tickets' element={<PlaneTicketList/>} />
       <Route path='/home' element={<HomeAfter/>} />
       <Route path='/' element={<Home/>} />
       

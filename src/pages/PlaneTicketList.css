@@ -1,0 +1,76 @@
+*{
+    background-color: #f7f9fe;
+}
+.ttle{
+    margin-top: 7%;
+}
+.here{
+    z-index: 10;
+    margin-left: 5%;
+    margin-top: 7%;
+    display: flex;
+}
+.searches{
+    margin-top: 20px;
+    width: 20%;
+    color: black;
+}
+.date-set1{
+    z-index: 10;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    width: 305px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 0%;
+}
+.date-set{
+    background-color: white;
+    margin-top: 0px;
+    height: 60px;
+    border: none;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 0%;
+}
+
+.map{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.all{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img1{
+    scale: 70%;
+    margin-right: -50px;
+}
+.dep{
+    margin-right: -50px;
+    font-size: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+.dep1{
+    font-size: 25px;
+    margin-top: 11px;
+}
+.op{
+    width: 1000px;
+    margin-left: 30px;
+}
+.verticalLine {
+    width: 2px; /* Adjust the thickness of the line */
+    background-color: black; /* Adjust the color of the line */
+    align-self: center; /* Adjust the alignment of the line */
+    height: 50%; /* Adjust the height of the line */
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
